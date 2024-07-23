@@ -262,3 +262,19 @@
 #ad2 .ad2_top button .fa{
     margin-left: 6px;
 }
+footer{
+    background-color: #1e293b;
+    padding: 30px 0px;
+}
+footer .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+footer .footer .footer_left{}
+footer .footer .footer_left .foot_top{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
