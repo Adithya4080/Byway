@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+#navbar{
+    border-bottom: 1px solid #d1d1d1;
+}
+#navbar .wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0px;
+}
+#navbar .navtop{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#navbar .navbot{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#navbar .navbot button{
+    background:none;
+}
+#navbar .navbot .btn1{
+    border: 2px solid #334155;
+    padding: 10px 7px;
+}
+#navbar .navbot .btn1 a{
+    color: #334155;
+    font-size: 16px;
+    font-weight: 600;
+}
+#navbar .navbot .btn2{
+    border: none;
+    background-color: #324054;
+    padding: 10px 7px;
+}
+#navbar .navbot .btn2 a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* spotlight section */
+#spotlight .wrapper{
+    display: flex;
+    align-items: center;
+    padding: 35px 0px;
+}
+#spotlight .spot-right h2{
+    font-size: 48px;
+    font-weight: bolder;
+    max-width: 60%;
+}
+#spotlight .spot-right p{
+    margin: 20px 0px;
+    color: #334155;
+    font-size: 18px;
+    max-width: 72%;
+}
+#spotlight .spot-right button{
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Ad Section */
+#ad{
+    background-color: #f8fafc;
+}
+#ad .ad_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+}
+#ad .ad_row h4{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#ad .ad_row .ad_col{
+    border-right: 5px solid #e2e8f0;
+    border-radius: 40px;
+    height: 10vh;
+}
+
+/* Category Section */
+#category{
+    padding: 30px 0px;
+}
+#category .cat_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#category .cat_top h3{
+    font-size: 24px;
+}
+#category .cat_row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#category .cat_row .cat_col{
+    border: 1px solid #c5dafe;
+    border-radius: 10px;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#category .cat_row .cat_col .cat_img{
+    background-color: #e0f2fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 50px;
+}
+#category .cat_row .cat_col h4{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Course Section */
+#course{
+    padding: 30px 0px;
+}
+#course .course_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+#course .course_top h3{
+    font-size: 24px;
+}
+#course .course_col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#course .course_col .course_row{
+    border: 1px solid #c5dafe;
+    border-radius: 10px;
+    padding:20px;
+}
+#course .course_col .course_row h4{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#course .course_col .course_row p{
+    margin-bottom: 10px;
+}
+#course .course_col .course_row .rating{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+#course .course_col .course_row .rating .fa{
+    color: #eab308;
+}
+#course .course_col .course_row h3{
+    font-size: 22px;
+}
+
+/* Instructor Section */
+#instructors{
+    padding: 30px 0px;
+}
+#instructors .ins_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+#instructors .ins_top h3{
+    font-size: 24px;
+}
+#instructors .wrapper .ins_col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#instructors .ins_col .ins_row{
+    border: 1px solid #c5dafe;
+    border-radius: 10px;
+    padding:20px;
+}
+#instructors .ins_col .ins_row h5{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#instructors .ins_col .ins_row p{
+    text-align: center;
+    color: #667080;
+    margin-bottom: 10px;
+}
+#instructors .ins_col .ins_row .ins_rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#instructors .ins_col .ins_row .ins_rating .fa{
+    color: #eab308;
+}
+
+/* Customer Section */
+
+/* AD2 Section */
+#ad2{
+    padding: 30px 0px;
+}
+#ad2 .ad2_top{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+#ad2 .ad2_top h3{
+    font-size: 24px;
+}
+#ad2 .ad2_top p{
+    margin: 20px 0px;
+    font-size: 18px;
+    color: #2b3645;
+    max-width: 74%;
+    font-weight: 400;
+}
+#ad2 .ad2_top button{
+    display: flex;
+    align-items: center;
+    padding: 14px 24px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#ad2 .ad2_top button .fa{
+    margin-left: 6px;
+}
