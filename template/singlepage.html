@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- {% load static %} -->
+    {% load static %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}" /> -->
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 </head>
@@ -30,7 +30,7 @@
     </header>
 
     <!-- main section -->
-     <section id="main">
+    <section id="main">
         <div class="wrapper">
             <div class="left">
                 <div class="left_top">
@@ -41,13 +41,313 @@
                         <img src="../static/images/short-arrow-right-black.svg" alt="Arrow" />
                         <a href="#">Introduction to User Experience Design</a>
                     </div>
+                    <div class="user">
+                        <h2>Introduction to User Experience Design</h2>
+                        <p>This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.</p>
+                        <div class="user_rating">
+                            <div>
+                                <p>4.6</p>
+                            </div>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <small>(651651 Ratings)</small>
+                            </div>
+                            <div><p>|</p></div>
+                            <p>22 Total Hours. 155 Lectures. Beginner</p>
+                        </div>
+                        <div class="user_info">
+                            <div class="user_img">
+                                <img src="../static/images/span-8.svg" alt="User" />
+                            </div>
+                            <p>Created by <a href="#">Ronald Richards</a></p>
+                        </div>
+                        <div class="language">
+                            <div>
+                                <img src="../static/images/language.svg" alt="Globe" />
+                            </div>
+                            <p>English, Spanish, Italian, German</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left_mid">
+                    <div class="list">
+                        <ul>
+                            <li><a href="#">Description</a></li>
+                            <li><a href="#">Instructor</a></li>
+                            <li><a href="#">Syllabus</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="course_des">
+                        <h3>Course Description</h3>
+                        <p>This interactive e-learning course will introduce you to User Experience (UX) design, the art of creating products and services that are intuitive, enjoyable, and user-friendly. Gain a solid foundation in UX principles and learn to apply them in real-world scenarios through engaging modules and interactive exercises. </p>
+                        <h3>Certification</h3>
+                        <p>At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning. Upon successful completion of our courses, you will earn a prestigious certification that not only validates your expertise but also opens doors to new opportunities in your chosen field.</p>
+                    </div>
+                    <div class="instructor_info">
+                        <h3>Instructor</h3>
+                        <h4><a href="#">Ronald Richards</a></h4>
+                        <span>UI/UX Designer</span>
+                        <div class="inst_info">
+                            <div class="inst_img">
+                                <img src="../static/images/span-8.svg" alt="">
+                            </div>
+                            <div>
+                                <div class="reviews">
+                                    <img src="../static/images/achive.svg" alt="Reviews" />
+                                    <span>40,445 Reviews</span>
+                                </div>
+                                <div class="students">
+                                    <img src="../static/images/cap.svg" alt="Students" />
+                                    <span>500 Students</span>
+                                </div>
+                                <div class="courses">
+                                    <img src="../static/images/play.svg" alt="Courses" />
+                                    <span>15 Courses</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences.</p>
+                    </div>
+                </div>
+                <div class="left_bot">
+                    <h3>Syllabus</h3>
+                    <div class="syllabus">
+                        <div class="syllabus_info">
+                            <div class="info_left">
+                                <div>
+                                    <img src="../static/images/arrow-down.svg" alt="Arrow Down" />
+                                </div>
+                                <h3>Introduction to UX Design</h3>
+                            </div>
+                            <div class="info_right">
+                                <p>5 Lessons</p>
+                                <p>1 hour</p>
+                            </div>
+                        </div>
+                        <div class="syllabus_info">
+                            <div class="info_left">
+                                <div>
+                                    <img src="../static/images/arrow-down.svg" alt="Arrow Down" />
+                                </div>
+                                <h3>Basics of User-Centered Design</h3>
+                            </div>
+                            <div class="info_right">
+                                <p>5 Lessons</p>
+                                <p>1 hour</p>
+                            </div>
+                        </div>
+                        <div class="syllabus_info">
+                            <div class="info_left">
+                                <div>
+                                    <img src="../static/images/arrow-down.svg" alt="Arrow Down" />
+                                </div>
+                                <h3>Elements of User Experience</h3>
+                            </div>
+                            <div class="info_right">
+                                <p>5 Lessons</p>
+                                <p>1 hour</p>
+                            </div>
+                        </div>
+                        <div class="syllabus_info">
+                            <div class="info_left">
+                                <div>
+                                    <img src="../static/images/arrow-down.svg" alt="Arrow Down" />
+                                </div>
+                                <h3>Visual Design Principles</h3>
+                            </div>
+                            <div class="info_right">
+                                <p>5 Lessons</p>
+                                <p>1 hour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right_img">
+                    <img src="../static/images/img.jpg" alt="User" />
+                </div>
+                <div class="price">
+                    <p>$49.5</p>
+                    <del>$99.5</del>
+                    <p class="offer">50% off</p>
+                </div>
+                <div>
+                    <button class="cart_btn" type="button">Add To Cart</button>
+                </div>
+                <button class="buy_btn" type="button">Buy Now</button>
+                <hr />
+                <p>Share</p>
+                <div>
+                    <img src="../static/images/social-media.jpg" alt="Social" />
                 </div>
             </div>
         </div>
-     </section>
+    </section>
+
+    <!-- Review Section -->
+    <section id="reviews">
+        <div class="wrapper">
+            <h3>Learner Reviews</h3>
+            <div class="reviews_col">
+                <div class="review_left">
+                    <div class="releft_top">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <h4>4.6</h4>
+                        <p>146,951 reviews</p>
+                    </div>
+                    <div class="releft_bot">
+                        <div class="rating" data-rating="5">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>80%</span>
+                        </div>
+                        <div class="rating" data-rating="4">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>10%</span>
+                        </div>
+                        <div class="rating" data-rating="3">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>5%</span>
+                        </div>
+                        <div class="rating" data-rating="2">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>3%</span>
+                        </div>
+                        <div class="rating" data-rating="1">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>2%</span>
+                        </div>
+                    </div>                      
+                </div>
+                <div class="review_right">
+                    <div class="review_box">
+                        <div class="box_left">
+                            <div>
+                                <img src="../static/images/span-6.svg" alt="User" />
+                            </div>
+                            <h4>Mark Doe</h4>
+                        </div>
+                        <div class="box_right">
+                            <div class="boxright_top">
+                                <div>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>5</span>
+                                </div>
+                                <div>
+                                    <p>Reviewed on 22nd March, 2024</p>
+                                </div>
+                            </div>
+                            <div class="boxright_bot">
+                                <p>I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_box">
+                        <div class="box_left">
+                            <div>
+                                <img src="../static/images/span-6.svg" alt="User" />
+                            </div>
+                            <h4>Mark Doe</h4>
+                        </div>
+                        <div class="box_right">
+                            <div class="boxright_top">
+                                <div>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>5</span>
+                                </div>
+                                <div>
+                                    <p>Reviewed on 22nd March, 2024</p>
+                                </div>
+                            </div>
+                            <div class="boxright_bot">
+                                <p>I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_box">
+                        <div class="box_left">
+                            <div>
+                                <img src="../static/images/span-6.svg" alt="User" />
+                            </div>
+                            <h4>Mark Doe</h4>
+                        </div>
+                        <div class="box_right">
+                            <div class="boxright_top">
+                                <div>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>5</span>
+                                </div>
+                                <div>
+                                    <p>Reviewed on 22nd March, 2024</p>
+                                </div>
+                            </div>
+                            <div class="boxright_bot">
+                                <p>I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_box">
+                        <div class="box_left">
+                            <div>
+                                <img src="../static/images/span-6.svg" alt="User" />
+                            </div>
+                            <h4>Mark Doe</h4>
+                        </div>
+                        <div class="box_right">
+                            <div class="boxright_top">
+                                <div>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>5</span>
+                                </div>
+                                <div>
+                                    <p>Reviewed on 22nd March, 2024</p>
+                                </div>
+                            </div>
+                            <div class="boxright_bot">
+                                <p>I was initially apprehensive, having no prior design experience. But the instructor, John Doe, did an amazing job of breaking down complex concepts into easily digestible modules. The video lectures were engaging, and the real-world examples really helped solidify my understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="review_btn">
+                            View More Reviews
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ------ Customer Section ------ -->
-    <!-- <section id="customer">
+    <section id="customer">
         <div class="wrapper">
             <div class="customer_top">
                 <div>
@@ -157,10 +457,10 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Courses Section -->
-    <!-- <section id="course">
+    <section id="course">
         <div class="wrapper">
             <div class="course_top">
                 <h3>More Courses Like This</h3>
@@ -252,10 +552,10 @@
                 </div>
             </div>
         </div>        
-    </section> -->
+    </section>
 
     <!-- -------footer section------ -->
-    <!-- <footer>
+    <footer>
         <div class="wrapper">
             <div class="footer">
                 <div class="footer_left">
@@ -295,7 +595,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
-    <script src="../static/js/script.js"></script>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
