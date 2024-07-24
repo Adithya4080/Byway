@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- {% load static %} -->
+    {% load static %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}" /> -->
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 </head>
@@ -76,16 +76,18 @@
             <div class="cat_top">
                 <h3>Top Categories</h3>
                 <small><a href="#">See all</a></small>
-            </div>            
+            </div>           
             <div class="cat_row">
-                <div class="cat_col">
-                    <div class="cat_img">
-                        <img src="../static/images/astrology.svg" alt="Astrology">
+                {% for category in categories %} 
+                    <div class="cat_col">
+                        <div class="cat_img">
+                            <img src="{{ category.icon.url }}" alt="{{ category.title }}">
+                        </div>
+                        <h4>{{ category.title }}</h4>
+                        <p>11 Courses</p>
                     </div>
-                    <h4>Astrology</h4>
-                    <p>11 Courses</p>
-                </div>
-                <div class="cat_col">
+                {% endfor %}
+                <!-- <div class="cat_col">
                     <div class="cat_img">
                         <img src="../static/images/devlopment.svg" alt="Development" />
                     </div>
@@ -105,7 +107,7 @@
                     </div>
                     <h4>Physics</h4>
                     <p>14 Courses</p>
-                </div>
+                </div> -->
             </div>
         </div>
      </section>
