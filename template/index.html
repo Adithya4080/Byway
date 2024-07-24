@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- {% load static %} -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}" /> -->
+    <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 </head>
@@ -303,7 +305,115 @@
 
     <!-- ------ Customer Section ------ -->
     <section id="customer">
-
+        <div class="wrapper">
+            <div class="customer_top">
+                <div>
+                    <h3>What Our Customer Say <br /> About Us</h3>
+                </div>
+                <div class="custtop_img">
+                    <div class="img_box" id="prev">
+                        <img src="../static/images/short-arrow-left.svg" alt="Arrow Left" />
+                    </div>
+                    <div class="img_box" id="next">
+                        <img src="../static/images/short-arrow-right.svg" alt="Arrow Right" />
+                    </div>
+                </div>
+            </div>
+            <div class="customer_bot">
+                <div class="slider">
+                    <div class="cust_bot">
+                        <div>
+                            <img src="../static/images/quotes.svg" alt="Quotes" />
+                        </div>
+                        <p>Byway's tech course are top notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.</p>
+                        <div class="cust_user">
+                            <div>
+                                <img src="../static/images/span-7.svg" alt="User" />
+                            </div>
+                            <div>
+                                <h5>Jane Doe</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cust_bot">
+                        <div>
+                            <img src="../static/images/quotes.svg" alt="Quotes" />
+                        </div>
+                        <p>Byway's tech course are top notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.</p>
+                        <div class="cust_user">
+                            <div>
+                                <img src="../static/images/span-7.svg" alt="User" />
+                            </div>
+                            <div>
+                                <h5>Jane Doe</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cust_bot">
+                        <div>
+                            <img src="../static/images/quotes.svg" alt="Quotes" />
+                        </div>
+                        <p>Byway's tech course are top notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.</p>
+                        <div class="cust_user">
+                            <div>
+                                <img src="../static/images/span-7.svg" alt="User" />
+                            </div>
+                            <div>
+                                <h5>Jane Doe</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cust_bot">
+                        <div>
+                            <img src="../static/images/quotes.svg" alt="Quotes" />
+                        </div>
+                        <p>Byway's tech course are top notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.</p>
+                        <div class="cust_user">
+                            <div>
+                                <img src="../static/images/span-7.svg" alt="User" />
+                            </div>
+                            <div>
+                                <h5>Jane Doe</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cust_bot">
+                        <div>
+                            <img src="../static/images/quotes.svg" alt="Quotes" />
+                        </div>
+                        <p>Byway's tech course are top notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.</p>
+                        <div class="cust_user">
+                            <div>
+                                <img src="../static/images/span-7.svg" alt="User" />
+                            </div>
+                            <div>
+                                <h5>Jane Doe</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cust_bot">
+                        <div>
+                            <img src="../static/images/quotes.svg" alt="Quotes" />
+                        </div>
+                        <p>Byway's tech course are top notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.</p>
+                        <div class="cust_user">
+                            <div>
+                                <img src="../static/images/span-7.svg" alt="User" />
+                            </div>
+                            <div>
+                                <h5>Jane Doe</h5>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- -----AD2 Section -->
@@ -368,13 +478,14 @@
                     <h3>Contact Us</h3>
                     <address>Address: 123 Main Street, Anytown, CA 12345</address>
                     <p>Tel: +(123) 456-7890</p>
-                    <p>Mail:bywayedu@webkul.in</p>
-                    <div>
+                    <p>Mail: bywayedu@webkul.in</p>
+                    <div class="social">
                         <img src="../static/images/social-media.jpg" alt="Social Media" />
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="../static/js/script.js"></script>
 </body>
 </html>
