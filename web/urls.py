@@ -6,6 +6,6 @@ app_name = 'web'
 
 urlpatterns = [
     path('',index,name="index"),
-    path('singlepage/',singlepage,name="singlepage"),
+    path('singlepage/<int:course_id>/',singlepage,name="singlepage"),
     path('courses/',courses,name="courses")
 ]
