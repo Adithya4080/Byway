@@ -16,12 +16,12 @@ class Category(models.Model):
 class Course(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
-    ratings = models.IntegerField()
+    ratings = models.FloatField()
     duration = models.IntegerField()
     created_by = models.CharField(max_length=25)
     languages = models.TextField()
     thumbnail_img = models.ImageField(upload_to='courses/thumbnail', blank=True)
-    original_price = models.IntegerField()
+    original_price = models.FloatField()
     discount_price = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 

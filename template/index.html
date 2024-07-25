@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 </head>
@@ -15,7 +14,7 @@
         <section id="navbar">
             <div class="wrapper">
                 <div class="navtop">
-                    <h1><a href="#"><img src="../static/images/logo.svg" alt="Logo" /></a></h1>
+                    <h1><a href="{% url 'web:index' %}"><img src="../static/images/logo.svg" alt="Logo" /></a></h1>
                     <h3>Byway</h3>
                 </div>
                 <div class="navbot">
@@ -87,27 +86,6 @@
                         <p>11 Courses</p>
                     </div>
                 {% endfor %}
-                <!-- <div class="cat_col">
-                    <div class="cat_img">
-                        <img src="../static/images/devlopment.svg" alt="Development" />
-                    </div>
-                    <h4>Development</h4>
-                    <p>12 Courses</p>
-                </div>
-                <div class="cat_col">
-                    <div class="cat_img">
-                        <img src="../static/images/marketing.svg" alt="Marketing" />
-                    </div>
-                    <h4>Marketing</h4>
-                    <p>12 Courses</p>
-                </div>
-                <div class="cat_col">
-                    <div class="cat_img">
-                        <img src="../static/images/physics.svg" alt="Physics" />
-                    </div>
-                    <h4>Physics</h4>
-                    <p>14 Courses</p>
-                </div> -->
             </div>
         </div>
      </section>
@@ -117,93 +95,32 @@
         <div class="wrapper">
             <div class="course_top">
                 <h3>Top Courses</h3>
-                <small><a href="#">See all</a></small>
+                <small><a href="{% url 'web:courses'  %}">See all</a></small>
             </div>
             <div class="course_col">
-                <div class="course_row">
-                    <div>
-                        <img src="../static/images/bg.jpg" alt="Background" />
-                    </div>
-                    <h4>Beginner's Guide to Design</h4>
-                    <p>By Ronald Richards</p>
-                    <div class="rating">
+                {% for course in courses %}
+                    <div class="course_row">                     
                         <div>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <img src="../static/images/bg.jpg" alt="Background" />
                         </div>
-                        <div>
-                            <small>(1200 Ratings)</small>
+                        <h4>{{ course.title }}</h4>
+                        <p>By {{ course.created_by}}</p>
+                        <div class="rating">
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <small>({{course.ratings}} Ratings)</small>
+                            </div>
                         </div>
-                    </div>
-                    <p>22 Total Hours. 155 Lectures. Beginner</p>
-                    <h3>$149.9</h3>                    
-                </div>
-                <div class="course_row">
-                    <div>
-                        <img src="../static/images/bg.jpg" alt="Background" />
-                    </div>
-                    <h4>Beginner's Guide to Design</h4>
-                    <p>By Ronald Richards</p>
-                    <div class="rating">
-                        <div>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <small>(1200 Ratings)</small>
-                        </div>
-                    </div>
-                    <p>22 Total Hours. 155 Lectures. Beginner</p>
-                    <h3>$149.9</h3>                    
-                </div>
-                <div class="course_row">
-                    <div>
-                        <img src="../static/images/bg.jpg" alt="Background" />
-                    </div>
-                    <h4>Beginner's Guide to Design</h4>
-                    <p>By Ronald Richards</p>
-                    <div class="rating">
-                        <div>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <small>(1200 Ratings)</small>
-                        </div>
-                    </div>
-                    <p>22 Total Hours. 155 Lectures. Beginner</p>
-                    <h3>$149.9</h3>                    
-                </div>
-                <div class="course_row">
-                    <div>
-                        <img src="../static/images/bg.jpg" alt="Background" />
-                    </div>
-                    <h4>Beginner's Guide to Design</h4>
-                    <p>By Ronald Richards</p>
-                    <div class="rating">
-                        <div>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <small>(1200 Ratings)</small>
-                        </div>
-                    </div>
-                    <p>22 Total Hours. 155 Lectures. Beginner</p>
-                    <h3>$149.9</h3>                    
-                </div>
+                        <p>{{ course.duration }} Total Hours. 155 Lectures. Beginner</p>
+                        <h3>$149.9</h3>
+                    </div>  
+                {% endfor %}    
             </div>
         </div>        
     </section>

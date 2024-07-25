@@ -152,10 +152,10 @@
     font-size: 24px;
 }
 #course .course_col{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 30px;
+    gap: 10px;
 }
 #course .course_col .course_row{
     border: 1px solid #c5dafe;
@@ -323,7 +323,6 @@ footer .footer{
     display: flex;
     justify-content: space-between;
     color: white;
-    white-space: ;
 }
 footer .footer .footer_left {
     width: 30%;
@@ -358,12 +357,6 @@ footer .footer .footer_right .social{
     filter: invert();
 }
 
-
-
-/* ----Single Page----- */
-/* #main .left_top{
-    background-color: #dfdfdf;
-} */
 #main .wrapper{
     display: flex;
     justify-content: space-between;
