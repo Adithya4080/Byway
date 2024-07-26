@@ -440,93 +440,31 @@
                 <h3>More Courses Like This</h3>
             </div>
             <div class="course_col">
-                <div class="course_row">
-                    <div>
-                        <img src="{% static 'images/bg.jpg' %}" alt="Background" />
-                    </div>
-                    <h4>Beginner's Guide to Design</h4>
-                    <p>By Ronald Richards</p>
-                    <div class="rating">
+                {% for similar in similar_courses %}
+                    <div class="course_row">
                         <div>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <img src="{% static 'images/bg.jpg' %}" alt="Background" />
                         </div>
-                        <div>
-                            <small>(1200 Ratings)</small>
+                        <h4>{{ similar.title }}</h4>
+                        <p>By {{similar.created_by}} </p>
+                        <div class="rating">
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <small>(1200 Ratings)</small>
+                            </div>
                         </div>
+                        <p>{{ similar.duration }} Total Hours. 155 Lectures. Beginner</p>
+                        <h3>${{ similar.new_price }}</h3>                    
                     </div>
-                    <p>22 Total Hours. 155 Lectures. Beginner</p>
-                    <h3>$149.9</h3>                    
-                </div>
-                <div class="course_row">
-                    <div>
-                        <img src="{% static 'images/bg.jpg' %}" alt="Background" />
-                    </div>
-                    <h4>Beginner's Guide to Design</h4>
-                    <p>By Ronald Richards</p>
-                    <div class="rating">
-                        <div>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <small>(1200 Ratings)</small>
-                        </div>
-                    </div>
-                    <p>22 Total Hours. 155 Lectures. Beginner</p>
-                    <h3>$149.9</h3>                    
-                </div>
-                <div class="course_row">
-                    <div>
-                        <img src="{% static 'images/bg.jpg' %}" alt="Background" />
-                    </div>
-                    <h4>Beginner's Guide to Design</h4>
-                    <p>By Ronald Richards</p>
-                    <div class="rating">
-                        <div>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <small>(1200 Ratings)</small>
-                        </div>
-                    </div>
-                    <p>22 Total Hours. 155 Lectures. Beginner</p>
-                    <h3>$149.9</h3>                    
-                </div>
-                <div class="course_row">
-                    <div>
-                        <img src="{% static 'images/bg.jpg' %}" alt="Background" />
-                    </div>
-                    <h4>Beginner's Guide to Design</h4>
-                    <p>By Ronald Richards</p>
-                    <div class="rating">
-                        <div>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        </div>
-                        <div>
-                            <small>(1200 Ratings)</small>
-                        </div>
-                    </div>
-                    <p>22 Total Hours. 155 Lectures. Beginner</p>
-                    <h3>$149.9</h3>                    
-                </div>
+                {% endfor %}
             </div>
         </div>        
     </section>
-
 {% endblock %}
     

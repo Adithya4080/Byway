@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="wrapper">
+        <h2>{{ category.title }}</h2>
+        <div class="courses">
+            {% for course in courses %}
+                <div class="course">
+                    <h4><a href="{% url 'web:singlepage' course.id %}">{{ course.title }}</a></h4>
+                    <p>By {{ course.created_by }}</p>
+                    <p>${{ course.new_price }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
