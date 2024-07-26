@@ -5,12 +5,20 @@ from web.models import Category, Course
 
 def index(request):
 
-    category = Category.objects.all()
-    course = Course.objects.all()[:4]
+    categories = Category.objects.all()
+    courses = Course.objects.all()[:4]
+
+    for category in categories:
+        category.total_courses = Course.objects.filter(category=category).count()
+
+    for course in courses:
+        original_price = course.original_price
+        discount_percentage = course.discount_price
+        course.new_price = original_price - (original_price * (discount_percentage / 100))
 
     context = {
-        "categories": category,
-        "courses" : course
+        "categories": categories,
+        "courses" : courses
     }
 
     return render(request, "index.html", context=context)
@@ -19,7 +27,7 @@ def index(request):
 
 
 def singlepage(request,course_id):
-
+    courses = Course.objects.all()[:4]
     course = get_object_or_404(Course, id=course_id)
     original_price = course.original_price
     discount_percentage = course.discount_price
@@ -27,7 +35,8 @@ def singlepage(request,course_id):
 
     context = {
         "courses" : course,
-        'new_price': new_price
+        'new_price': new_price,
+        "courses" : courses
     }
 
     return render(request, "singlepage.html",context=context)

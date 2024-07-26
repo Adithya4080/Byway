@@ -43,7 +43,7 @@
     </section>
 
     <!-- Category Section -->
-     <section id="category">
+    <section id="category">
         <div class="wrapper">
             <div class="cat_top">
                 <h3>Top Categories</h3>
@@ -56,12 +56,12 @@
                             <img src="{{ category.icon.url }}" alt="{{ category.title }}">
                         </div>
                         <h4>{{ category.title }}</h4>
-                        <p>11 Courses</p>
+                        <p>{{ category.total_courses }} Courses</p>
                     </div>
                 {% endfor %}
             </div>
         </div>
-     </section>
+    </section>
 
     <!-- Courses Section -->
     <section id="course">
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <p>{{ course.duration }} Total Hours. 155 Lectures. Beginner</p>
-                        <h3>$149.9</h3>
+                        <h3>${{ course.new_price }}</h3>
                     </div>  
                 {% endfor %}    
             </div>
