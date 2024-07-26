@@ -132,13 +132,16 @@
     align-items: center;
     padding: 30px;
     border-radius: 50px;
+    padding-bottom: 10px;
 }
-#category .cat_row .cat_col h4{
+#category .cat_row .cat_col{
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 20px;
 }
-
+#category .cat_row .cat_col small{
+    margin-top: 10px;
+}
 /* Course Section */
 #course{
     padding: 30px 0px;
@@ -166,6 +169,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 20px;
+    color: black;
 }
 #course .course_col .course_row h4 a{
     color: black;

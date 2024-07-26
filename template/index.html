@@ -55,8 +55,8 @@
                         <div class="cat_img">
                             <img src="{{ category.icon.url }}" alt="{{ category.title }}">
                         </div>
-                        <h4><a href="{% url 'web:category_courses' category.id %}">{{ category.title }}</a></h4>
-                        <p>{{ category.total_courses }} Courses</p>
+                        <h4><a href="{% url 'web:category_courses' category.id %}" style="color: black;">{{ category.title }}</a></h4>
+                        <small>{{ category.total_courses }} Courses</small>
                     </div>
                 {% endfor %}
             </div>
