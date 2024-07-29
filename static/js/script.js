@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
 
     function showSlide(index) {
-        const slideWidth = slides[0].clientWidth + 40; // Adjust according to the padding/margin
+        const slideWidth = slides[0].clientWidth + 20; 
         slider.style.transform = `translateX(-${index * slideWidth}px)`;
     }
 
@@ -23,5 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
             currentIndex++;
             showSlide(currentIndex);
         }
+    });
+    window.addEventListener('resize', function() {
+        showSlide(currentIndex);
     });
 });
