@@ -19,23 +19,23 @@
     <section id="ad">
         <div class="wrapper">
             <div class="ad_row">
-                <div>
-                    <h4>250+</h4>
+                <div class="ad_col">
+                    <h4>250 +</h4>
                     <p>Courses by our best mentors</p>
                 </div>
-                <div class="ad_col"></div>
-                <div>
-                    <h4>150+</h4>
+                <span class="span1"></span>
+                <div class="ad_col">
+                    <h4>1000 +</h4>
                     <p>Courses by our best mentors</p>
                 </div>
-                <div class="ad_col"></div>
-                <div>
-                    <h4>250+</h4>
+                <span class="span2"></span>
+                <div class="ad_col">
+                    <h4>15 +</h4>
                     <p>Courses by our best mentors</p>
                 </div>
-                <div class="ad_col"></div>
-                <div>
-                    <h4>250+</h4>
+                <span class="span3"></span>
+                <div class="ad_col">
+                    <h4>2400 +</h4>
                     <p>Courses by our best mentors</p>
                 </div>
             </div>
@@ -55,8 +55,8 @@
                         <div class="cat_img">
                             <img src="{{ category.icon.url }}" alt="{{ category.title }}">
                         </div>
-                        <h4><a href="{% url 'web:category_courses' category.id %}" style="color: black;">{{ category.title }}</a></h4>
-                        <small>{{ category.total_courses }} Courses</small>
+                        <h4><a href="{% url 'web:category_courses' category.id %}">{{ category.title }}</a></h4>
+                        <p>{{ category.total_courses }} Courses</p>
                     </div>
                 {% endfor %}
             </div>
@@ -87,10 +87,10 @@
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </div>
                             <div>
-                                <small>({{course.ratings}} Ratings)</small>
+                                <small>({{course.total_ratings}} Ratings)</small>
                             </div>
                         </div>
-                        <p>{{ course.duration }} Total Hours. 155 Lectures. Beginner</p>
+                        <p>{{ course.duration }} Total Hours. {{course.lectures}} Lectures. Beginner</p>
                         <h3>${{ course.new_price }}</h3>
                     </div>  
                 {% endfor %}    

@@ -16,14 +16,17 @@ class Category(models.Model):
 class Course(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
-    ratings = models.FloatField()
-    duration = models.IntegerField()
-    created_by = models.CharField(max_length=25)
-    languages = models.TextField()
+    ratings = models.FloatField(default=0.0)
+    duration = models.IntegerField(default=0)
+    created_by = models.CharField(max_length=25, default='Unknown')
+    languages = models.TextField(default='')
     thumbnail_img = models.ImageField(upload_to='courses/thumbnail', blank=True)
-    original_price = models.FloatField()
-    discount_price = models.IntegerField()
+    original_price = models.FloatField(default=0.0)
+    discount_price = models.FloatField(default=0.0)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    total_ratings = models.IntegerField(default=0)
+    lectures = models.IntegerField(default=0)
+
 
     class Meta:
         db_table = "web_course"

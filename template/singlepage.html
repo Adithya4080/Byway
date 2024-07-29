@@ -29,16 +29,16 @@
                                     <i class="fa fa-star" aria-hidden="true"></i>
                                 </div>
                                 <div>
-                                    <small>(651651 Ratings)</small>
+                                    <small>({{ courses.total_ratings }} Ratings)</small>
                                 </div>
                                 <div><p>|</p></div>
-                                <p>{{ courses.duration }} Total Hours. 155 Lectures. Beginner</p>
+                                <p>{{ courses.duration }} Total Hours. {{ courses.lectures }} Lectures. Beginner</p>
                             </div>
                             <div class="user_info">
                                 <div class="user_img">
                                     <img src="{% static 'images/span-8.svg' %}" alt="User" />
                                 </div>
-                                <p>Created by <a href="#">Ronald Richards</a></p>
+                                <small>Created by <a href="#">{{ courses.created_by }}</a></small>
                             </div>
                             <div class="language">
                                 <div>
@@ -65,22 +65,22 @@
                         </div>
                         <div class="instructor_info">
                             <h3>Instructor</h3>
-                            <h4><a href="#">Ronald Richards</a></h4>
+                            <h4><a href="#">{{ courses.created_by }}</a></h4>
                             <span>UI/UX Designer</span>
                             <div class="inst_info">
                                 <div class="inst_img">
                                     <img src="{% static 'images/span-8.'%}svg" alt="User" />
                                 </div>
                                 <div>
-                                    <div class="reviews">
+                                    <div class="info_det">
                                         <img src="{% static 'images/achive.svg'%}" alt="Reviews" />
                                         <span>40,445 Reviews</span>
                                     </div>
-                                    <div class="students">
+                                    <div class="info_det">
                                         <img src="{% static 'images/cap.svg'%}" alt="Students" />
                                         <span>500 Students</span>
                                     </div>
-                                    <div class="courses">
+                                    <div class="info_det">
                                         <img src="{% static 'images/play.svg'%}" alt="Courses" />
                                         <span>15 Courses</span>
                                     </div>

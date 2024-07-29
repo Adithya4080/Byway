@@ -53,13 +53,12 @@
 
 /* spotlight section */
 #spotlight .wrapper{
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
     align-items: center;
     padding: 35px 0px;
 }
 #spotlight .spot-right h2{
-    font-size: 60px;
+    font-size: 48px;
     font-weight: bolder;
     max-width: 60%;
 }
@@ -84,6 +83,7 @@
 }
 #ad .ad_row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 40px 0px;
@@ -94,7 +94,7 @@
     font-size: 30px;
     margin-bottom: 10px;
 }
-#ad .ad_row .ad_col{
+#ad .ad_row span{
     border-right: 5px solid #e2e8f0;
     border-radius: 40px;
     height: 10vh;
@@ -133,15 +133,13 @@
     align-items: center;
     padding: 30px;
     border-radius: 50px;
-    padding-bottom: 10px;
 }
-#category .cat_row .cat_col{
-    margin-top: 10px;
-    margin-bottom: 15px;
+#category .cat_row .cat_col h4{
+    padding: 10px 0px;
     font-size: 20px;
 }
-#category .cat_row .cat_col small{
-    margin-top: 10px;
+#category .cat_row .cat_col h4 a{
+    color: black;
 }
 /* Course Section */
 #course{
@@ -380,11 +378,11 @@ footer .footer .footer_right .social{
 }
 #main .left .left_top .user h2{
     font-size: 38px;
-    margin-bottom: 18px;
+    padding-bottom: 18px;
 }
 #main .left .left_top .user p{
     width: 65%;
-    margin-bottom: 18px;
+    padding-bottom: 18px;
 }
 #main .left .left_top .user .user_rating{
     display: flex;
@@ -398,6 +396,9 @@ footer .footer .footer_right .social{
     align-items: center;
     gap: 10px;
 }
+#main .left .left_top .user .user_info small{
+    font-size: 18px;
+}
 #main .left .left_top .user .user_info .user_img{
     width: 5%;
 }
@@ -407,8 +408,12 @@ footer .footer .footer_right .social{
 }
 #main .left .left_top .user .language{
     display: flex;
-    margin-top: 10px;
+    align-items: center;
+    padding-top: 10px;
     gap: 10px;
+}
+#main .left .left_top .user .language p{
+    padding-bottom: 0;
 }
 #main .left .left_mid{
     margin-top: 30px;
@@ -430,8 +435,8 @@ footer .footer .footer_right .social{
     border-bottom: 1px solid rgb(188, 188, 188);
 }
 #main .left .left_mid h3{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 #main .left .left_mid p{
     font-size: 16px;
@@ -464,6 +469,15 @@ footer .footer .footer_right .social{
 #main .left .left_mid .instructor_info .inst_info .inst_img img{
     width: 100%;
     border-radius: 50%;
+}
+#main .left .left_mid .instructor_info .inst_info .info_det{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+#main .left .left_mid .instructor_info .inst_info .reviews .info_det:last-child{
+    margin-bottom: 0px;
 }
 #main .left .left_bot{
     margin-top: 20px;
@@ -663,7 +677,14 @@ footer .footer .footer_right .social{
         margin-bottom: 20px;
     }
 }
-
+@media (max-width: 815px) {
+    #ad .ad_row .ad_col{
+        margin-bottom: 20px;
+    }
+    #ad .ad_row .span3{
+        display: none;
+    }
+}
 @media (max-width: 768px) {
     #spotlight .spot-right h2 {
         font-size: 28px;
@@ -678,7 +699,14 @@ footer .footer .footer_right .social{
         font-size: 12px;
     }
 }
-
+@media (max-width: 615px) {
+    #ad .ad_row .span2{
+        display: none;
+    }
+    #ad .ad_row .span3{
+        display: block;
+    }
+}
 @media (max-width: 480px) {
     #spotlight .spot-right h2 {
         font-size: 24px;
@@ -691,5 +719,18 @@ footer .footer .footer_right .social{
     #spotlight .spot-right button {
         padding: 8px 15px;
         font-size: 10px;
+    }
+}
+@media (max-width: 400px){
+    #ad .ad_row span{
+        display: none;
+    }
+    #ad .ad_row .span3{
+        display: none;
+    }
+    #ad .ad_row .ad_col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
