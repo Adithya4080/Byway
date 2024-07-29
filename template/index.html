@@ -73,7 +73,7 @@
             <div class="course_col">
                 {% for course in courses %}
                     <div class="course_row">                     
-                        <div>
+                        <div class="course_img">
                             <img src="../static/images/bg.jpg" alt="Background" />
                         </div>
                         <h4><a href="{% url 'web:singlepage' course.id %}">{{ course.title }}</a></h4>
