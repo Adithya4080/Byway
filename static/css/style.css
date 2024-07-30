@@ -280,7 +280,7 @@
     background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
     margin: 20px 20px 20px 0px;
     flex-shrink: 0;
     width: 32%
@@ -558,7 +558,7 @@ footer .footer_right .social img{
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
     height: 100%;
 }
 #main .right .right_img{
