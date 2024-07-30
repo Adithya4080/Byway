@@ -834,6 +834,14 @@ footer .footer_right .social img{
         max-width: 90%;
         margin: 0 auto;
     }
+    footer .footer_right .social{
+        width: 80%;
+        margin: 0 auto;
+        filter: invert();
+    }
+    footer .footer_right .social img{
+        width: 100%;
+    }
     #ad2 .ad2_top {
         flex-direction: column;
         text-align: center;
