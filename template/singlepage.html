@@ -5,165 +5,164 @@
     <!-- main section -->
     <section id="main">
         <div class="wrapper">            
-                <div class="left">
-                    <div class="left_top">
-                        <div class="tags">
-                            <p>Home</p>
-                            <img src="{% static 'images/short-arrow-right-black.svg' %}" alt="Arrow" />
-                            <p>Categories</p>
-                            <img src="{% static 'images/short-arrow-right-black.svg' %}" alt="Arrow" />
-                            <a href="#">{{ courses.title }}</a>
+            <div class="left">
+                <div class="left_top">
+                    <div class="tags">
+                        <p>Home</p>
+                        <img src="{% static 'images/short-arrow-right-black.svg' %}" alt="Arrow" />
+                        <p>Categories</p>
+                        <img src="{% static 'images/short-arrow-right-black.svg' %}" alt="Arrow" />
+                        <a href="#">{{ courses.title }}</a>
+                    </div>
+                    <div class="user">
+                        <h2>{{ courses.title }}</h2>
+                        <p>{{ courses.description }}</p>
+                        <div class="user_rating">
+                            <div>
+                                <p>{{ courses.ratings }}</p>
+                            </div>
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <small>({{ courses.total_ratings }} Ratings)</small>
+                            </div>
+                            <div><p>|</p></div>
+                            <p>{{ courses.duration }} Total Hours. {{ courses.lectures }} Lectures. Beginner</p>
                         </div>
-                        <div class="user">
-                            <h2>{{ courses.title }}</h2>
-                            <p>{{ courses.description }}</p>
-                            <div class="user_rating">
-                                <div>
-                                    <p>{{ courses.ratings }}</p>
-                                </div>
-                                <div>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <small>({{ courses.total_ratings }} Ratings)</small>
-                                </div>
-                                <div><p>|</p></div>
-                                <p>{{ courses.duration }} Total Hours. {{ courses.lectures }} Lectures. Beginner</p>
+                        <div class="user_info">
+                            <div class="user_img">
+                                <img src="{% static 'images/span-8.svg' %}" alt="User" />
                             </div>
-                            <div class="user_info">
-                                <div class="user_img">
-                                    <img src="{% static 'images/span-8.svg' %}" alt="User" />
-                                </div>
-                                <small>Created by <a href="#">{{ courses.created_by }}</a></small>
+                            <small>Created by <a href="#">{{ courses.created_by }}</a></small>
+                        </div>
+                        <div class="language">
+                            <div>
+                                <img src="{% static 'images/language.svg' %}" alt="Globe" />
                             </div>
-                            <div class="language">
-                                <div>
-                                    <img src="{% static 'images/language.svg' %}" alt="Globe" />
-                                </div>
-                                <p>English, Spanish, Italian, German</p>
-                            </div>
+                            <p>English, Spanish, Italian, German</p>
                         </div>
                     </div>
-                    <div class="left_mid">
-                        <div class="list">
-                            <ul>
-                                <li><a href="#">Description</a></li>
-                                <li><a href="#">Instructor</a></li>
-                                <li><a href="#">Syllabus</a></li>
-                                <li><a href="#">Reviews</a></li>
-                            </ul>
-                        </div>
-                        <div class="course_des">
-                            <h3>Course Description</h3>
-                            <p>{{ courses.description }}</p>
-                            <h3>Certification</h3>
-                            <p>At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning. Upon successful completion of our courses, you will earn a prestigious certification that not only validates your expertise but also opens doors to new opportunities in your chosen field.</p>
-                        </div>
-                        <div class="instructor_info">
-                            <h3>Instructor</h3>
-                            <h4><a href="#">{{ courses.created_by }}</a></h4>
-                            <span>UI/UX Designer</span>
-                            <div class="inst_info">
-                                <div class="inst_img">
-                                    <img src="{% static 'images/span-8.'%}svg" alt="User" />
-                                </div>
-                                <div>
-                                    <div class="info_det">
-                                        <img src="{% static 'images/achive.svg'%}" alt="Reviews" />
-                                        <span>40,445 Reviews</span>
-                                    </div>
-                                    <div class="info_det">
-                                        <img src="{% static 'images/cap.svg'%}" alt="Students" />
-                                        <span>500 Students</span>
-                                    </div>
-                                    <div class="info_det">
-                                        <img src="{% static 'images/play.svg'%}" alt="Courses" />
-                                        <span>15 Courses</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences.</p>
-                        </div>
+                </div>
+                <div class="left_mid">
+                    <div class="list">
+                        <ul>
+                            <li class="list1"><a href="#">Description</a></li>
+                            <li><a href="#">Instructor</a></li>
+                            <li><a href="#">Syllabus</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
                     </div>
-                    <div class="left_bot">
-                        <h3>Syllabus</h3>
-                        <div class="syllabus">
-                            <div class="syllabus_info">
-                                <div class="info_left">
-                                    <div>
-                                        <img src="{% static 'images/arrow-down.svg' %}" alt="Arrow Down" />
-                                    </div>
-                                    <h3>Introduction to UX Design</h3>
+                    <div class="course_des">
+                        <h3>Course Description</h3>
+                        <p>{{ courses.description }}</p>
+                        <h3>Certification</h3>
+                        <p>At Byway, we understand the significance of formal recognition for your hard work and dedication to continuous learning. Upon successful completion of our courses, you will earn a prestigious certification that not only validates your expertise but also opens doors to new opportunities in your chosen field.</p>
+                    </div>
+                    <div class="instructor_info">
+                        <h3>Instructor</h3>
+                        <h4><a href="#">{{ courses.created_by }}</a></h4>
+                        <span>UI/UX Designer</span>
+                        <div class="inst_info">
+                            <div class="inst_img">
+                                <img src="{% static 'images/span-8.'%}svg" alt="User" />
+                            </div>
+                            <div>
+                                <div class="info_det">
+                                    <img src="{% static 'images/achive.svg'%}" alt="Reviews" />
+                                    <span>40,445 Reviews</span>
                                 </div>
-                                <div class="info_right">
-                                    <p>5 Lessons</p>
-                                    <p>1 hour</p>
+                                <div class="info_det">
+                                    <img src="{% static 'images/cap.svg'%}" alt="Students" />
+                                    <span>500 Students</span>
+                                </div>
+                                <div class="info_det">
+                                    <img src="{% static 'images/play.svg'%}" alt="Courses" />
+                                    <span>15 Courses</span>
                                 </div>
                             </div>
-                            <div class="syllabus_info">
-                                <div class="info_left">
-                                    <div>
-                                        <img src="{% static 'images/arrow-down.svg' %}" alt="Arrow Down" />
-                                    </div>
-                                    <h3>Basics of User-Centered Design</h3>
+                        </div>
+                        <p>With over a decade of industry experience, Ronald brings a wealth of practical knowledge to the classroom. He has played a pivotal role in designing user-centric interfaces for renowned tech companies, ensuring seamless and engaging user experiences.</p>
+                    </div>
+                </div>
+                <div class="left_bot">
+                    <h3>Syllabus</h3>
+                    <div class="syllabus">
+                        <div class="syllabus_info">
+                            <div class="info_left">
+                                <div>
+                                    <img src="{% static 'images/arrow-down.svg' %}" alt="Arrow Down" />
                                 </div>
-                                <div class="info_right">
-                                    <p>5 Lessons</p>
-                                    <p>1 hour</p>
-                                </div>
+                                <h3>Introduction to UX Design</h3>
                             </div>
-                            <div class="syllabus_info">
-                                <div class="info_left">
-                                    <div>
-                                        <img src="{% static 'images/arrow-down.svg' %}" alt="Arrow Down" />
-                                    </div>
-                                    <h3>Elements of User Experience</h3>
-                                </div>
-                                <div class="info_right">
-                                    <p>5 Lessons</p>
-                                    <p>1 hour</p>
-                                </div>
+                            <div class="info_right">
+                                <p>5 Lessons</p>
+                                <p>1 hour</p>
                             </div>
-                            <div class="syllabus_info">
-                                <div class="info_left">
-                                    <div>
-                                        <img src="{% static 'images/arrow-down.svg' %}" alt="Arrow Down" />
-                                    </div>
-                                    <h3>Visual Design Principles</h3>
+                        </div>
+                        <div class="syllabus_info">
+                            <div class="info_left">
+                                <div>
+                                    <img src="{% static 'images/arrow-down.svg' %}" alt="Arrow Down" />
                                 </div>
-                                <div class="info_right">
-                                    <p>5 Lessons</p>
-                                    <p>1 hour</p>
+                                <h3>Basics of User-Centered Design</h3>
+                            </div>
+                            <div class="info_right">
+                                <p>5 Lessons</p>
+                                <p>1 hour</p>
+                            </div>
+                        </div>
+                        <div class="syllabus_info">
+                            <div class="info_left">
+                                <div>
+                                    <img src="{% static 'images/arrow-down.svg' %}" alt="Arrow Down" />
                                 </div>
+                                <h3>Elements of User Experience</h3>
+                            </div>
+                            <div class="info_right">
+                                <p>5 Lessons</p>
+                                <p>1 hour</p>
+                            </div>
+                        </div>
+                        <div class="syllabus_info">
+                            <div class="info_left">
+                                <div>
+                                    <img src="{% static 'images/arrow-down.svg' %}" alt="Arrow Down" />
+                                </div>
+                                <h3>Visual Design Principles</h3>
+                            </div>
+                            <div class="info_right">
+                                <p>5 Lessons</p>
+                                <p>1 hour</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="right">
-                    <div class="right_img">
-                        <img src="{% static 'images/img.jpg' %}" alt="User" />
-                    </div>
-                    <div class="price">
-                        <p>${{ new_price }}</p>
-                        <p><del>${{ courses.original_price }}</del></p>
-                        <p class="offer">{{ courses.discount_price }}% off</p>
-                    </div>
-                    <div>
-                        <button class="cart_btn" type="button">Add To Cart</button>
-                    </div>
-                    <button class="buy_btn" type="button">Buy Now</button>
-                    <hr />
-                    <p>Share</p>
-                    <div>
-                        <img src="{% static 'images/social-media.jpg' %}" alt="Social" />
-                    </div>
+            <div class="right">
+                <div class="right_img">
+                    <img src="{% static 'images/img.jpg' %}" alt="User" />
                 </div>
-            
+                <div class="price">
+                    <p>${{ new_price }}</p>
+                    <p><del>${{ courses.original_price }}</del></p>
+                    <p class="offer">{{ courses.discount_price }}% off</p>
+                </div>
+                <div>
+                    <button class="cart_btn" type="button">Add To Cart</button>
+                </div>
+                <button class="buy_btn" type="button">Buy Now</button>
+                <hr />
+                <p>Share</p>
+                <div class="right_social">
+                    <img src="{% static 'images/social-media.jpg' %}" alt="Social" />
+                </div>
+            </div>            
         </div>
     </section>
 
