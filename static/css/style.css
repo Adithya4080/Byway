@@ -307,17 +307,22 @@
     align-items: center;
     gap: 150px;
 }
-#ad2 .ad2_top h3{
+#ad2 .ad2_bot{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+#ad2 h3{
     font-size: 24px;
 }
-#ad2 .ad2_top p{
+#ad2 p{
     margin: 20px 0px;
     font-size: 18px;
     color: #2b3645;
     max-width: 74%;
     font-weight: 400;
 }
-#ad2 .ad2_top button{
+#ad2 button{
     display: flex;
     align-items: center;
     padding: 14px 24px;
@@ -327,7 +332,7 @@
     border-radius: 10px;
     font-size: 16px;
 }
-#ad2 .ad2_top button .fa{
+#ad2 button .fa{
     margin-left: 6px;
 }
 
@@ -338,6 +343,7 @@ footer{
 }
 footer .footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: white;
 }
@@ -359,9 +365,8 @@ footer .footer ul li:last-child{
 footer .footer ul li a{
     color: white;
 }
-footer .footer .footer_mid1 h3{
-    margin-bottom: 10px;
-}
+
+footer .footer .footer_mid1 h3,
 footer .footer .footer_mid2 h3{
     margin-bottom: 10px;
 }
@@ -673,22 +678,18 @@ footer .footer .footer_right .social{
         flex-direction: column-reverse;
         text-align: center;
     }
-    
     #spotlight .spot-right h2 {
         font-size: 36px;
         max-width: 100%;
     }
-
     #spotlight .spot-right p {
         font-size: 16px;
         max-width: 100%;
     }
-
     #spotlight .spot-right button {
         padding: 15px 25px;
         font-size: 14px;
     }
-
     #spotlight .spot-left img {
         margin-bottom: 20px;
     }
@@ -726,10 +727,15 @@ footer .footer .footer_right .social{
     #spotlight .spot-right p {
         font-size: 14px;
     }
-
     #spotlight .spot-right button {
         padding: 10px 20px;
         font-size: 12px;
+    }
+    #spotlight .spot-left{
+        width: 80%;
+    }
+    #spotlight .spot-left img{
+        width: 100%;
     }
     #course .course_col {
         grid-template-columns: repeat(2, 1fr);
@@ -741,6 +747,54 @@ footer .footer .footer_right .social{
 
     #course .course_col .course_row h3 {
         font-size: 20px;
+    }
+    footer .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer .footer_left,
+    footer .footer .footer_mid1,
+    footer .footer .footer_mid2,
+    footer .footer .footer_right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .footer .footer_left .foot_top {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    footer .footer .footer_left p,
+    footer .footer .footer_right address,
+    footer .footer .footer_right p {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    #ad2 .ad2_top {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    #ad2 .ad2_bot {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    #ad2 p {
+        max-width: 100%;
+    }
+    #ad2 img {
+        width: 100%;
+        max-width: 300px;
+    }
+    #ad2 button {
+        width: 100%;
+        justify-content: center;
     }
 }
 @media (max-width: 615px) {
@@ -779,6 +833,35 @@ footer .footer .footer_right .social{
     #spotlight .spot-right button {
         padding: 8px 15px;
         font-size: 10px;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer .footer .footer_left p,
+    footer .footer .footer_right address,
+    footer .footer .footer_right p {
+        max-width: 100%;
+    }
+    #ad2 {
+        padding: 20px 10px;
+    }
+
+    #ad2 h3 {
+        font-size: 20px;
+    }
+
+    #ad2 p {
+        font-size: 16px;
+    }
+
+    #ad2 button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    #ad2 img {
+        max-width: 250px;
     }
 }
 @media (max-width: 400px){
