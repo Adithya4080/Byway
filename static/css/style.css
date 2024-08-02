@@ -785,9 +785,10 @@ footer .footer_right .social img{
 }
 #reviews .review_right .review_box .box_right .boxright_top p{
     color: #2b3645;
+    font-size: 16px;
 }
 #reviews .review_right .review_box .box_right .boxright_bot p{
-    font-size: 18px;
+    font-size: 16px;
     max-width: 90%;
     color: #2b3645;
 }
