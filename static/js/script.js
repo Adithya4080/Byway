@@ -28,3 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentIndex);
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navbot = document.querySelector('.navbot');
+
+    hamburger.addEventListener('click', function() {
+        navbot.classList.toggle('show');
+        hamburger.classList.toggle('active');
+    });
+});

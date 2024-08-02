@@ -1,5 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block additional_navbot %}
+    <div class="navbot">
+        <div><img src="{% static 'images/wishlist.svg' %}" alt="" /></div>
+        <div><img src="{% static 'images/cart.svg' %}" alt="" /></div>
+        <div><img src="{% static 'images/bell.svg' %}" alt="" /></div>
+        <div class="user_id">
+            <h2>J</h2>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
 
     <!-- main section -->
