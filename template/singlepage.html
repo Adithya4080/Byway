@@ -444,7 +444,7 @@
                         <div>
                             <img src="{% static 'images/bg.jpg' %}" alt="Background" />
                         </div>
-                        <h4>{{ similar.title }}</h4>
+                        <h4><a href="{% url 'web:singlepage' similar.id %}">{{ similar.title }}</a></h4>
                         <p>By {{similar.created_by}} </p>
                         <div class="rating">
                             <div>
@@ -455,10 +455,10 @@
                                 <i class="fa fa-star" aria-hidden="true"></i>
                             </div>
                             <div>
-                                <small>(1200 Ratings)</small>
+                                <small>({{similar.total_ratings}} Ratings)</small>
                             </div>
                         </div>
-                        <p>{{ similar.duration }} Total Hours. 155 Lectures. Beginner</p>
+                        <p>{{ similar.duration }} Total Hours. {{similar.lectures}} Lectures. Beginner</p>
                         <h3>${{ similar.new_price }}</h3>                    
                     </div>
                 {% endfor %}
