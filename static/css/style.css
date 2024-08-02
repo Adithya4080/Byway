@@ -492,6 +492,7 @@ footer .footer_right .social img{
 }
 #main .left .left_top .tags{
     display: flex;
+    align-items: center;
     gap: 20px;
     padding: 30px 0px;
 }
@@ -1107,7 +1108,7 @@ footer .footer_right .social img{
         gap: 100px;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 500px){
     #ad .ad_row span{
         display: none;
     }
